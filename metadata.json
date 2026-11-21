@@ -1,0 +1,6 @@
+{
+  "name": "Forneria Digital — Cardápio de Pizzaria",
+  "description": "Cardápio digital premium para pizzaria artesanal com personalização de pizzas, agendamento e pedido direto pelo WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

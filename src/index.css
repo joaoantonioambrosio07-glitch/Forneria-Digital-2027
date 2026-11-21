@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+
+  --color-obsidian-950: #0D0908;
+  --color-obsidian-900: #140E0C;
+  --color-obsidian-800: #1C1410;
+  --color-obsidian-700: #2A1E18;
+  --color-crimson-600: #C41E24;
+  --color-crimson-500: #D9252B;
+  --color-gold-400: #E5A94C;
+  --color-gold-500: #D49334;
+  --color-ivory-100: #F5EFE6;
+  --color-stone-300: #BFB6AA;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
